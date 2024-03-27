@@ -14,7 +14,7 @@ const AlertCategories = ({isOpen, onClose, onOpen, selectDeleteId}) => {
     
 
     async function deleteCategories(id){
-        await axios.delete(`http://localhost:3000/categories/${id}`)
+        await axios.delete(`https://datab-3.onrender.com/categories/${id}`)
         .then((data) => {
             toast({
                 title: 'Category deleted.',

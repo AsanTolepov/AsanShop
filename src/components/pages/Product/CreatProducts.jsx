@@ -23,7 +23,7 @@ const CreatProducts = () => {
                 description,
                 categoryId
             }
-            await axios.post("http://localhost:3000/products", data)
+            await axios.post("https://datab-3.onrender.com/products", data)
             .then((data) => {
             toast({
                 title: 'Product created.',

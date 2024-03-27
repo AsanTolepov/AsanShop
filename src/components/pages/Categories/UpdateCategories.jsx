@@ -18,7 +18,7 @@ const UpdateCategories = ({open, onClose, selectDeleteId}) => {
           title: title,
           image: image
         }
-        await axios.put(`http://localhost:3000/categories/${selectDeleteId}`, data)
+        await axios.put(`https://datab-3.onrender.com/categories/${selectDeleteId}`, data)
         .then((data) => {
             toast({
               title: 'Category updated.',

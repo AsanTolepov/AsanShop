@@ -3,7 +3,7 @@ import { setCategories, setIsLoadingCategories } from "../slice/CategoriesSlice"
 
 export default async function getCategories(dispatch){
     dispatch(setIsLoadingCategories())
-    await axios.get("http://localhost:3000/categories")
+    await axios.get("https://datab-3.onrender.com/categories")
     .then((data) => {
         dispatch(setCategories(data.data))
         // console.log(data.data)

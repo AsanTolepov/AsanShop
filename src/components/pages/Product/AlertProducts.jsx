@@ -9,7 +9,7 @@ const AlertProducts = ({isOpen, onClose, onOpen, selectDeleteId}) => {
     const dispatch = useDispatch()
     const toast = useToast()
     async function deleteProducts(id){
-        await axios.delete(`http://localhost:3000/products/${id}`)
+        await axios.delete(`https://datab-3.onrender.com/products/${id}`)
         .then((data) => {
             onClose()
             // console.log(data)

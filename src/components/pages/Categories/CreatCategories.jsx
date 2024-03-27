@@ -13,7 +13,7 @@ const CreatCategories = () => {
           title: title,
           image: image
         }
-        await axios.post("http://localhost:3000/categories", data)
+        await axios.post("https://datab-3.onrender.com/categories", data)
         .then((data) => {
             toast({
               title: 'Category created.',

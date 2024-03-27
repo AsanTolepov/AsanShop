@@ -29,7 +29,7 @@ const UpdateProduct = ({open, onClose, selectDeleteId}) => {
           categoryId
       };
       try {
-          await axios.put(`http://localhost:3000/products/${selectDeleteId}`, data);
+          await axios.put(`https://datab-3.onrender.com/products/${selectDeleteId}`, data);
           toast({
               title: 'Product updated.',
               description: "Success",
